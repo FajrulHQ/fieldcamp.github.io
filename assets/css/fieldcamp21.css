@@ -118,7 +118,7 @@ body {
 
 ::selection {
   background: #fefd7f;
-  color: #black;
+  color: black;
 }
 
 ::-moz-selection {
