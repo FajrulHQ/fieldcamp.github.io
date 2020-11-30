@@ -1028,6 +1028,9 @@ footer
   footer .footer-content {
     padding: 60px 0px!important;
   }
+  .contact-form iframe {
+    min-width: 50%;
+  }
 }
 
 footer {
@@ -1047,7 +1050,7 @@ footer .footer-content {
 .contact-form {
   position: relative;
   z-index: 10;
-  padding: 45px;
+  padding: 35px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
@@ -1059,6 +1062,12 @@ footer .footer-content {
 
 footer .right-content {
   align-self: center;
+  margin-top: -30px;
+  text-align: center;
+}
+
+footer .right-content span {
+  color: #fefd7f;
 }
 
 .contact-form input,
