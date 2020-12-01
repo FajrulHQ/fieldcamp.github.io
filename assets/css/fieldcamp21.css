@@ -158,9 +158,9 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: white;
+  background-color: rgba(244, 244, 244, 0);
   color: #3a6a6a;
-  border-bottom: 2px solid #3a6a6a;
+  border-bottom: 3px solid #3a6a6a;
 }
 
 a.main-button {
