@@ -214,12 +214,12 @@ button.main-button:hover {
   font-weight: 700;
   color: #1e1e1e;
   margin-bottom: 25px;
+  border-bottom: 3px double #3a6a6a;
 }
 
 .center-heading h2 em {
   font-style: normal;
   color: #3a6a6a;
-  border-bottom: 3px double #3a6a6a;
 }
 
 .center-heading p {
@@ -251,8 +251,7 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: white!important;
-  background-color: #3a6a6a;
+  border-bottom: 3px solid #3a6a6a;
 }
 
 .background-header .nav li a.active {
@@ -292,6 +291,9 @@ header
   transition: all 0.3s ease 0s;
 }
 
+.header-area .main-nav .logo img:hover {
+  filter: brightness(120%);
+}
 
 .header-area .main-nav .nav {
   float: left;
