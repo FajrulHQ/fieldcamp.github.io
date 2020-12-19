@@ -12,6 +12,7 @@ Table of contents
 08. contact
 09. footer
 10. preloader
+11. about-us
 
 --------------------------------------------- */
 /* 
@@ -246,17 +247,21 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #7a7a7a!important;
   padding: 0px 10px;
 }
 
 .background-header .main-nav .nav li:hover a {
   border-bottom: 3px solid #3a6a6a;
+  background-color: white;
 }
 
-.background-header .nav li a.active {
-  color: #0b0c0c!important;
-  background-color: #fefd7f;
+.background-header .main-nav .nav li a.active {
+  border-bottom: 3px solid #3a6a6a!important;
+}
+
+.background-header .main-nav .nav .menu-active {
+  border-bottom: 3px solid #3a6a6a!important;
 }
 
 .header-area {
@@ -297,10 +302,12 @@ header
 
 .header-area .main-nav .nav {
   float: left;
+  background-color: white;
+  border-radius: 30px;
   margin-top: 27px;
   margin-left: 15%;
   margin-right: 0px;
-  background-color: #fff;
+  background-color: none;
   padding: 0px 20px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -321,7 +328,7 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
   color: #7a7a7a;
   text-transform: uppercase;
@@ -1564,5 +1571,105 @@ preface
   text-align: left;
 }
 
+/* 
+---------------------------------------------
+sample-header
+--------------------------------------------- 
+*/
 
+.sample-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180%;
+  background-image: url("../images/cover-bg/bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sample-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, #1e1e1e , #3a6a6a);
+  opacity: 0.6;
+}
+.sample-header-section {
+  position: relative;
+  padding: 15% 0 10%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sample-header-section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-bottom: 5px double white;
+}
+
+.sample-section-wrap {
+  position: relative;
+  background-color: white;
+}
+
+.sample-section {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+/* 
+---------------------------------------------
+about-us
+--------------------------------------------- 
+*/
+
+#about-us .left-image {
+  align-self: center;
+  text-align: center;
+}
+
+#about-us .right-text h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #3a6a6a;
+  text-align: center;
+}
+
+#about-us .right-text h1 em {
+  font-style: normal;
+  color: #4a4a4a;
+  font-weight: 800;
+  font-size: 130%;
+}
+#about-us .right-text h3 {
+  font-weight: 700;
+  color: #3a6a6a;
+  border-bottom: 2px solid #3a6a6a;
+  margin-bottom: 30px;
+}
+
+#about-us .right-text p {
+  text-align: justify;
+  text-indent: 3em;
+  margin-bottom: 20px;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+}
+
+#about-us .right-text p a {
+  font-weight: 600;
+}
+
+#about-us .right-text p a:hover {
+  color: #3a6a6a;
+}
 
