@@ -205,7 +205,7 @@ button.main-button:hover {
 
 
 .center-heading {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .center-heading h2 {
@@ -213,9 +213,8 @@ button.main-button:hover {
   text-align: center;
   font-size: 42px;
   font-weight: 700;
-  color: #1e1e1e;
+  color: #4a4a4a;
   margin-bottom: 25px;
-  border-bottom: 3px double #3a6a6a;
 }
 
 .center-heading h2 em {
@@ -804,7 +803,7 @@ event
 .features-item h4 {
   margin-top: 0px;
   font-size: 25px;
-  color: black;
+  color: #4a4a4a;
   margin-bottom: 15px;
   font-weight: 700;
 }
@@ -1003,7 +1002,6 @@ testimonials
 }
 
 #method .owl-carousel .owl-dot,
-#event .owl-carousel .owl-dot,
 #sponsor .owl-carousel .owl-dot {
   display: inline-block;
   margin: 0 5px;
@@ -1013,7 +1011,6 @@ testimonials
 }
 
 #method .owl-carousel .owl-dot.active,
-#event .owl-carousel .owl-dot.active,
 #sponsor .owl-carousel .owl-dot.active {
   background-color: #3a6a6a;
 }
@@ -1176,7 +1173,7 @@ footer .social li a {
   color: #fff;
   text-align: center;
   background-color: transparent;
-  border: 1px solid #fff;
+  border-bottom: 2px solid #fff;
   width: 44px;
   height: 44px;
   line-height: 44px;
@@ -1189,8 +1186,7 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #3a6a6a;
-  border-color: #3a6a6a;
+  border-color: #fefd7f;
   color: #fff;
 }
 
@@ -1617,39 +1613,43 @@ sample-header
 
 /* 
 ---------------------------------------------
-about-us
+sample section
 --------------------------------------------- 
 */
-#about-us {
-  padding: 100px 0px 0px 0px;
+.sample-section {
+  padding: 100px 0px 100px 0px;
 }
 
-#about-us .image {
+.sample-section .image {
   align-self: center;
   text-align: center;
 }
 
-#about-us .content h1 {
+.sample-section .content h1 {
   margin-bottom: 20px;
   font-weight: 600;
   color: #3a6a6a;
   text-align: center;
 }
 
-#about-us .content h1 em {
+.sample-section .content h1 em {
   font-style: normal;
   color: #4a4a4a;
   font-weight: 800;
   font-size: 130%;
 }
-#about-us .content h3 {
+.sample-section .content h3 {
   font-weight: 700;
   color: #3a6a6a;
-  border-bottom: 2px solid #3a6a6a;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
-#about-us .content p {
+.sample-section .content h3 em {
+  font-style: normal;
+  color: #4a4a4a;
+}
+
+.sample-section .content p {
   text-align: justify;
   text-indent: 3em;
   margin-bottom: 20px;
@@ -1657,11 +1657,11 @@ about-us
   line-height: 30px;
 }
 
-#about-us .content p a {
+.sample-section .content p a {
   font-weight: 600;
 }
 
-#about-us .content p a:hover {
+.sample-section .content p a:hover {
   color: #3a6a6a;
 }
 
@@ -1752,6 +1752,77 @@ preface-content
 ::-webkit-scrollbar-thumb
 {
   border-radius: 7px;
-  -webkit-box-shadow: inset 0 0 6px rgba(58,106,106,.3);
   background-color: #3a6a6a;
+}
+
+/* 
+---------------------------------------------
+button
+--------------------------------------------- 
+*/
+.gallery-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button {
+  margin: 10px;
+  float: left;
+  display: block;
+  padding: 1em 2em;
+  background: none;
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-left: 2px solid #3a6a6a;
+  border-right: 2px solid #3a6a6a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3a6a6a;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.button::after {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.button:hover::after {
+  opacity: 1;
+  background-color: #3a6a6a;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button,
+.button:after {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.button:hover {
+  border-color: transparent;
+  color: #fff;
+}
+
+#other {
+  padding-top: 30px; 
+  background-color: rgba(8,106,106,0.02);
 }
