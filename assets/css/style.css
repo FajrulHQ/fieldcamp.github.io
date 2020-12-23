@@ -864,24 +864,17 @@ method
 }
 
 #method .right-text .owl-carousel a {
-  background-color: #3a6a6a;
-  padding: 3px 10px;
-  font-size: 14px;
-  color: white;
-  margin-bottom: 15px;
-  margin-top: 3px;
-}
-
-#method .right-text .owl-carousel a:hover{
   background-color: white;
+  font-size: 20px;
   color: #3a6a6a;
+  margin-top: 3px;
   border-bottom: 2px solid #3a6a6a;
+  font-weight: bold;
 }
 
 #method .right-text .owl-carousel p {
-  margin-top: 10px;
-  text-indent: 2em;
-  font-size: 13px;
+  margin-top: 20px;
+  font-size: 12px;
 }
 
 /*
@@ -1638,6 +1631,48 @@ sample section
   font-weight: 800;
   font-size: 130%;
 }
+
+.sample-section .content h2 {
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.sample-section .content ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+.sample-section .content ol li {
+  margin: 0 0 0.5rem 0;
+  font-size: small;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  text-align: justify;
+  color: #888;
+  line-height: 30px;
+}
+.sample-section .content ol li::before {
+  content: counter(my-awesome-counter);
+  color: #fefd7f;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 28px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: #4a4a4a;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+
 .sample-section .content h3 {
   font-weight: 700;
   color: #3a6a6a;
@@ -1658,7 +1693,7 @@ sample section
 }
 
 .sample-section .content p a {
-  font-weight: 600;
+  color: #4a4a4a;
 }
 
 .sample-section .content p a:hover {
