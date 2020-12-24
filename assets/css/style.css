@@ -247,7 +247,7 @@ header
 .background-header .logo,
 .background-header .main-nav .nav li a {
   color: #7a7a7a!important;
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 
 .background-header .main-nav .nav li:hover a {
@@ -802,10 +802,16 @@ event
 
 .features-item h4 {
   margin-top: 0px;
-  font-size: 25px;
+  font-size: 30px;
   color: #4a4a4a;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 700;
+}
+
+.features-item h4 em {
+  color: #3a6a6a;
+  font-style: normal;
+  
 }
 
 .features-item p {
@@ -1677,6 +1683,7 @@ sample section
   font-weight: 700;
   color: #3a6a6a;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .sample-section .content h3 em {
@@ -1698,6 +1705,14 @@ sample section
 
 .sample-section .content p a:hover {
   color: #3a6a6a;
+}
+
+.border-event {
+  border-left: 3px solid #3a6a6a;
+  border-right: 3px solid #3a6a6a;
+  margin-bottom: 40px;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 /* 
@@ -1806,7 +1821,7 @@ button
 }
 
 .button {
-  margin: 10px;
+  margin-left: 5em;
   float: left;
   display: block;
   padding: 1em 2em;

@@ -161,7 +161,7 @@ img {
   content: '';
   position: absolute;
   display: block;
-  width: 100px;
+  width: 40px;
   height: 4px;
   background: #4a4a4a;
   bottom: 0;
