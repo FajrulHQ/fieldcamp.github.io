@@ -1142,8 +1142,13 @@ footer .right-content span {
 
 .footer-content .right-content p {
   color: #FFF;
-  font-size: 13px;
+  font-size: 12px;
   text-align: justify;
+}
+
+.footer-content .right-content p em {
+  color: #fefd7f;
+  font-style: normal;
 }
 
 .footer-content .right-content a {
