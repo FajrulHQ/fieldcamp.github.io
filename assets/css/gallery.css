@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-}
-
 .gallery {
   position: relative;
   z-index: 2;
