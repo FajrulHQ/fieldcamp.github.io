@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/scss/plyr.css" />
 
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -102,6 +104,17 @@
     <!-- ***** Header Text End ***** -->
   </div>
   <!-- ***** Welcome Area End ***** -->
+
+  <div class="col-lg-8 center">
+    <p style="font-size: large;"><b>Official Trailer</b> Field Camp 2021</p>
+    <div class="plyr__video-embed" id="player">
+      <iframe 
+      src="https://www.youtube.com/embed/xIep6b2HCB0" 
+      allowfullscreen 
+      allowtransparency 
+      allow="autoplay"></iframe>
+    </div>
+  </div>
 
   <!-- ***** Preface Start ***** -->
   <section class="section" id="preface">
@@ -241,7 +254,7 @@
       </div>
     </div>
   </section>
-  <!-- ***** Preface Start ***** -->
+  <!-- ***** Gallery Start ***** -->
 
   <div class="left-image-decor"></div>
 
@@ -433,9 +446,7 @@
             <div class="center-heading">
               <h2><em>Sponsored</em> by:</h2>
               <div class="owl-carousel">
-                <img alt="HAGI" src="./assets/images/client/HAGI.png">
-                <img alt="IAGI" src="./assets/images/client/IAGI-1.png">
-                <img alt="HMGI" src="./assets/images/client/hmgi.png">
+                <img alt="HAGI" src="./assets/images/img-not-found.gif">
               </div>
             </div>
           </div>
@@ -533,6 +544,11 @@
 
   <!-- Global Init -->
   <script src="assets/js/custom.js"></script>
+  <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+  <script src="lib/plyrs/js/plyr.js"></script>
+  <script>
+    const player = new Plyr('#player');
+  </script>
 
 </body>
 </html>

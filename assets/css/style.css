@@ -1794,6 +1794,7 @@ preface-content
 
 ::-webkit-scrollbar
 {
+  height: 8px;
   width: 8px;
   background-color: #fff;
 }
