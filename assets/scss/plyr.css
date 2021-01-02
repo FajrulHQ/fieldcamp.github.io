@@ -43,7 +43,7 @@ html {
   line-height: 1.7;
   line-height: var(--plyr-line-height, 1.7);
   max-width: 100%;
-  min-width: 600px;
+  min-width: 200px;
   position: relative;
   text-shadow: none;
   transition: box-shadow 0.3s ease;
