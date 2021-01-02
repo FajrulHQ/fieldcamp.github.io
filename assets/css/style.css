@@ -1826,7 +1826,6 @@ button
 }
 
 .button {
-  margin-left: 5em;
   float: left;
   display: block;
   padding: 1em 2em;
@@ -1880,4 +1879,15 @@ button
 #other {
   padding-top: 30px; 
   background-color: rgba(8,106,106,0.03);
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.center a {
+  display: inline-block;
+  vertical-align: middle;
 }
