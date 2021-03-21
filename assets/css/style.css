@@ -1482,6 +1482,7 @@ sponsor
   margin: auto;
   max-width: 60%;
   height: auto;
+  justify-content: center;
   filter: grayscale(100%);
 }
 
