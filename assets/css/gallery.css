@@ -28,12 +28,10 @@
       flex-basis: 33.333%;
   padding: 10px;
   overflow: hidden;
-  border-radius: 10px;
   cursor: pointer;
 }
 .gallery figure img {
   width: 100%;
-  border-radius: 10px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -78,7 +76,6 @@
 .popup figure img {
   position: relative;
   z-index: 2;
-  border-radius: 15px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 6px 30px rgba(0, 0, 0, 0.4);
 }
 .popup figure figcaption {
@@ -91,8 +88,8 @@
   border-radius: 0 0 15px 15px;
   padding: 100px 20px 20px 20px;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 32px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 24px;
 }
 .popup figure figcaption small {
   font-size: 11px;
